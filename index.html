@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoLessons - Mental Well-being for Adolescents</title>
+    <link rel="stylesheet" href="div.css">
+    <!-- Include Animate.css for basic animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Include GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">AdoLessons</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#signin">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <section id="home" class="banner">
+        <div class="banner-text">
+            <h1 style="color: black;">Empowering Adolescents through AI-Driven Mental Well-being</h1>
+            <a href="#services" class="btn animate_animated animate_bounceIn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>Welcome to AdoLessons</h2>
+        <p>AI-powered platform for personalized mental health support and social growth.</p>
+        <div class="quick-links">
+            <a href="#services" class="btn">Explore Services</a>
+            <a href="#community" class="btn">Join Our Community</a>
+            <a href="#contact" class="btn">Get Professional Help</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>AI-Driven Assessments</h3>
+            <p>Personalized assessments to track and improve your mental health.</p>
+            <a href="#learn-more" class="btn">Learn More</a>
+        </div>
+        <div class="service-item">
+            <h3>Professional Counseling</h3>
+            <p>Connect with certified mental health experts for personalized support.</p>
+            <a href="#learn-more" class="btn">Learn More</a>
+        </div>
+        <div class="service-item">
+            <h3>Peer Support</h3>
+            <p>Join our community to share experiences and find support.</p>
+            <a href="#learn-more" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <h2>Join the AdoLessons Community</h2>
+        <p>Connect with peers, share experiences, and grow together.</p>
+        <div class="community-features">
+            <div class="feature-item">
+                <h3>Forums</h3>
+                <p>Engage in discussions on mental health topics with peers.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Support Groups</h3>
+                <p>Join interest-based support groups to reduce isolation.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Events</h3>
+                <p>Participate in virtual events, webinars, and wellness activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Resources</h2>
+        <div class="resource-item">
+            <h3>Blog</h3>
+            <p>Read articles on mental health and well-being.</p>
+        </div>
+        <div class="resource-item">
+            <h3>Videos</h3>
+            <p>Watch educational videos on mental health topics.</p>
+        </div>
+        <div class="resource-item">
+            <h3>Guides</h3>
+            <p>Download guides and checklists for self-care and wellness.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <a href="#facebook">Facebook</a>
+            <a href="#instagram">Instagram</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- Chatbot Pop-up -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Need Help?</h3>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot-message">Hello! How can I assist you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <button id="open-chatbot" class="chatbot-btn">Chat with us</button>
+
+    <!-- JavaScript -->
+    <script src="ji.js"></script>
+
+    <!-- GSAP Animations -->
+    <script>
+        gsap.from(".banner-text h1", { duration: 1.5, y: -50, opacity: 0, ease: "bounce" });
+        gsap.from(".intro h2", { duration: 1, x: -100, opacity: 0 });
+        gsap.from(".intro p", { duration: 1, x: 100, opacity: 0 });
+        gsap.from(".service-item", { duration: 1, y: 100, opacity: 0, stagger: 0.2 });
+        gsap.from(".community-features .feature-item", { duration: 1, y: 100, opacity: 0, stagger: 0.2 });
+    </script>
+</body>
+</html>
